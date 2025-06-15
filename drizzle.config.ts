@@ -4,7 +4,7 @@ import env from "./lib/env";
 
 export default defineConfig({
   out: "./lib/drizzle/migrations",
-  schema: "./lib/drizzle/db/schema.ts",
+  schema: "./lib/drizzle/db/schema/index.ts",
   dialect: "turso",
   casing: "snake_case",
   dbCredentials: {
