@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
@@ -13,9 +12,7 @@
     <div class="navbar-end items-center flex gap-4">
       <AppThemeToggle />
 
-      <button class="btn btn-accent">
-        Sign In <Icon name="tabler:brand-github" size="20" />
-      </button>
+      <AuthButton />
     </div>
   </div>
 </template>
