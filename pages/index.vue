@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="hero bg-base-300 container mx-auto mt-4">
-    <div class="hero-content text-center min-h-96">
+  <UContainer class="rounded-2xl bg-primary-100/80 dark:bg-slate-700 container mx-auto mt-4">
+    <div class="text-center min-h-96 flex justify-center items-center text-default">
       <div class="max-w-md">
         <h1 class="text-5xl font-bold">
           Travel Log
@@ -15,7 +15,7 @@
         <AuthButton />
       </div>
     </div>
-  </div>
+  </UContainer>
 </template>
 
 <style scoped>

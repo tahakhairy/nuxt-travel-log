@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     ],
   },
   css: ["~/assets/css/main.css"],
-  modules: ["@nuxt/eslint", "@nuxt/icon", "@nuxtjs/color-mode", "@pinia/nuxt"],
+  modules: ["@nuxt/eslint", "@nuxt/icon", "@nuxtjs/color-mode", "@pinia/nuxt", "@nuxt/ui"],
   eslint: {
     config: {
       standalone: false,
@@ -24,5 +24,6 @@ export default defineNuxtConfig({
     storage: "localStorage",
     storageKey: "theme",
     dataValue: "theme",
+    classPrefix: "",
   },
 });

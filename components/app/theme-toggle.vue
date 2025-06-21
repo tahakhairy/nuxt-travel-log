@@ -12,23 +12,11 @@ const isDark = computed({
 </script>
 
 <template>
-  <label class="swap swap-rotate">
-    <input
-      v-model="isDark"
-      class="theme-controller"
-      type="checkbox"
-    >
-
-    <Icon
-      class="swap-off fill-current"
-      name="tabler:sun"
-      size="40"
-    />
-
-    <Icon
-      class="swap-on h-10 w-10 fill-current"
-      name="tabler:moon-filled"
-      size="40"
-    />
-  </label>
+  <UButton
+    :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'"
+    color="neutral"
+    variant="ghost"
+    size="xl"
+    @click="isDark = !isDark"
+  />
 </template>
