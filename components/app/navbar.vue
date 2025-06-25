@@ -9,7 +9,9 @@
         <h1>Travel Log</h1>
       </NuxtLink>
       <div class="navbar-end items-center flex gap-4">
-        <AppThemeToggle />
+        <ClientOnly>
+          <AppThemeToggle />
+        </ClientOnly>
         <AuthButton />
       </div>
     </UContainer>
