@@ -2,7 +2,7 @@
 import { UButton } from "#components";
 
 const { loading, user } = storeToRefs(useAuthStore());
-const { signIn, signOut } = useAuthStore();
+const { signIn } = useAuthStore();
 </script>
 
 <template>
@@ -13,7 +13,7 @@ const { signIn, signOut } = useAuthStore();
       label: 'Sign Out',
       slot: 'icon' as const,
       onSelect() {
-        signOut()
+        navigateTo('/sign-out')
       },
     }]"
   >

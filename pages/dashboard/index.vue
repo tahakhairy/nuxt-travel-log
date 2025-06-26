@@ -3,8 +3,9 @@
 </script>
 
 <template>
-  <div>
-    <h1>You are Logged In</h1>
+  <div class="flex-1 flex ">
+    <AppSidebar />
+    <div class="flex-1 bg-muted" />
   </div>
 </template>
 
